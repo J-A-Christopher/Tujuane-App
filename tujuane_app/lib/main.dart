@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:tujuane_app/components/first.dart';
 
 void main() {
   runApp(const Main());
@@ -15,8 +16,11 @@ class Main extends StatelessWidget {
           title: const Text('Tujuane App'),
         ),
         body: Container(),
-        floatingActionButton: const FloatingActionButton(
-          onPressed: null,
+        floatingActionButton: FloatingActionButton(
+          onPressed: () {
+            Navigator.push(context,
+                MaterialPageRoute(builder: (context) => const MyWidget()));
+          },
           child: Icon(Icons.add),
         ),
       ),
