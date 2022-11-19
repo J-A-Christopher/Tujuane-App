@@ -10,11 +10,16 @@ class Main extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-        home: Scaffold(
-      appBar: AppBar(
-        title: const Text('Tujuane App'),
+      home: Scaffold(
+        appBar: AppBar(
+          title: const Text('Tujuane App'),
+        ),
+        body: Container(),
+        floatingActionButton: const FloatingActionButton(
+          onPressed: null,
+          child: Icon(Icons.add),
+        ),
       ),
-      body: Container(),
-    ));
+    );
   }
 }
